@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h3>Macoratti.NET</h3>
+</div>
+
+@if (Session["nomeUsuarioLogado"] != null)
+{
+    <text>
+       <h3> BemVindo @Session["nomeUsuarioLogado"].ToString() </h3>
+    </text>
+}
+
